@@ -1,0 +1,58 @@
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    border: 2px solid #4CAF50; 
+    padding: 10px;
+    background-color: #E8F5E9; 
+
+    h1 {
+        text-align: center;
+        color: #2E7D32;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-areas:
+            "header header header"
+            "sidebar content1 content1"
+            "sidebar content2 content3"
+            "footer footer footer";
+        gap: 10px;
+        padding: 10px;
+
+        .item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #4CAF50; 
+            color: white;
+            padding: 20px;
+            border: 1px solid #2E7D32;
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            grid-area: header;
+        }
+
+        .sidebar {
+            grid-area: sidebar;
+        }
+
+        .content1 {
+            grid-area: content1;
+        }
+
+        .content2 {
+            grid-area: content2;
+        }
+
+        .content3 {
+            grid-area: content3;
+        }
+
+        .footer {
+            grid-area: footer;
+        }
+    }
+}
